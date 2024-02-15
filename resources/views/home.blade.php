@@ -24,7 +24,11 @@
             @foreach ($trains as $train)
             <div class="col-12 col-md-4 col-lg-4 my-4" >
                 <div class="card m-3 border-0">
-                    Titolo: <h1> {{ $train->azienda }}</h1>
+                    Azienda: <h1> {{ $train->azienda }}</h1>
+                    Stazione di partenza: <h4> {{ $train->departure_station}}</h4>
+                    Stazione di arrivo: <h4>{{ $train->destination}}</h4>
+                    Orario di partenza: <h5>{{ $train->departure_hour}}</h5>
+                    Orario di arrivo <h5>{{ $train->arrival_hour}}</h5>
                     
                 </div>
             </div>
