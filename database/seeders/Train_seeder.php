@@ -77,8 +77,8 @@ class Train_seeder extends Seeder
         $new_train ->arrival_hour = $faker->randomElements(["Italo", "Frecciarossa", "Trenord"]);
         $new_train ->train_code = $faker->shuffle(['helloworld',"lollopoaaa"]);
         $new_train ->number_wagon = $faker->randomElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-        $new_train ->in_hour =  $faker->randomElements([0,1]);;
-        $new_train ->deleted =  $faker->randomElements([0,1]);;
+        $new_train ->in_hour =  $faker->randomElements([0,1]);
+        $new_train ->deleted =  $faker->randomElements([0,1]);
         $new_train ->save();
     }
    
