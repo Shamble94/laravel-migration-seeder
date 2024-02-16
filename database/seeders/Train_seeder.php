@@ -67,18 +67,18 @@ class Train_seeder extends Seeder
               
     };  */
     for($i=0; $i<10; $i++){
-        $new_train = new Train();
-        $new_train ->azienda = $faker->randomElement(["Italo", "Frecciarossa", "Trenord"]);
-        $new_train ->departure_station = $faker->randomElement(["Roma", "Milano", "Verona"]);
-        $new_train ->destination = $faker->randomElement(["Napoli", "Rossano Calabro", "Rosolina Mare"]);
-        $new_train ->departure_hour = $faker->dateTimeBetween("-3 days ", "+3 days");
-        $new_train ->arrival_hour = $faker->dateTimeBetween("+1 days ", "+3 days");
-        $new_train ->train_code = $faker->shuffle(['helloworld']);
-        $new_train ->number_wagon = $faker->randomDigit();
-        $new_train ->in_hour =  $faker->randomDigit();
-        $new_train ->deleted =  $faker->randomDigit();
-        $new_train ->save();
-    }
+        $train = new Train();
+        $train->azienda = $faker->randomElement(["Italo", "Frecciarossa", "Trenord"]);
+        $train->departure_station = $faker->randomElement(["Roma", "Milano", "Verona"]);
+        $train->destination = $faker->randomElement(["Napoli", "Rossano Calabro", "Rosolina Mare"]);
+        $train->departure_hour = $faker->dateTimeBetween("-3 days ", "+3 days");
+        $train->arrival_hour = $faker->dateTimeBetween("+1 days ", "+3 days");
+        $train->train_code = $faker->shuffle(['helloworld']);
+        $train->number_wagon = $faker->randomDigit();
+        $train->in_hour =  $faker->randomDigit();
+        $train->deleted =  $faker->randomDigit();
+        $train->save();
+        }
    
-}
+    }
 }
