@@ -29,6 +29,7 @@
                     Stazione di arrivo: <h4>{{ $train->destination}}</h4>
                     Orario di partenza: <h5>{{ $train->departure_hour}}</h5>
                     Orario di arrivo <h5>{{ $train->arrival_hour}}</h5>
+                    Cancellato? : <h5>{{ $train->deleted ? "Si" : "No"}}</h5>
                     
                 </div>
             </div>
