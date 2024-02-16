@@ -20,7 +20,7 @@
 
     <div class="container">
         <div class="row">
-            <h1 class="text-center m-5">Lista Film</h1>
+            <h1 class="text-center m-5">Lista Treni</h1>
             @foreach ($trains as $train)
             <div class="col-12 col-md-4 col-lg-4 my-4" >
                 <div class="card m-3 border-0">
